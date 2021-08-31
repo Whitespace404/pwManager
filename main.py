@@ -16,3 +16,8 @@ cursor = connection.cursor()
 # cursor.execute("SELECT * FROM secrets")
 # print(cursor.fetchall())
 
+master_password = input("Enter master password: ")
+if master_password != "test":
+    quit()
+
+print("Welcome to password manager.")
