@@ -32,13 +32,3 @@ Would you like to:
 3: Delete a password
 4: Update a password
 """)
-
-choice = input("> ")
-
-if choice == "1":
-    # account = input("Account: ")
-    cursor.execute(f"""SELECT * FROM secrets""")
-    print(cursor.fetchall())
-
-    # cursor.execute("""SELECT * FROM secrets""")
-    # print(cursor.fetchall())
