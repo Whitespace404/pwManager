@@ -7,5 +7,3 @@ cryptography = Fernet(key)
 def encrypt(password):
     encrypted = cryptography.encrypt(bytes(password, "utf-8"))
     return encrypted
-
-print(encrypt("foobar"))
