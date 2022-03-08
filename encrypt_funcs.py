@@ -14,4 +14,4 @@ def encrypt(password):
 
 def decrypt(encrypted_str):
     decrypted = cryptography.decrypt(encrypted_str)
-    return str(decrypted)
+    return decrypted.decode(ENCODING)
